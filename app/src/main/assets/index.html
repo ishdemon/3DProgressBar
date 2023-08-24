@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 3D Progressbar with state controllers (clean CSS)</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+           <div class="progressbar-wrapper">
+        <div class="progressbar">
+
+           
+       
+
+            <div class="side side__front">
+                <div class="side__fill"></div>
+            </div>
+            <div class="side side__back">
+                <div class="side__fill"></div>
+            </div>
+            <div class="side side__top">
+                <div class="side__fill"></div>
+            </div>
+            <div class="side side__bottom">
+                <div class="side__fill"></div>
+            </div>
+            <div class="side side__left"></div>
+        </div>
+    </div>
+</div>
+<!-- partial -->
+<script>
+    function setProgress(val){
+      var r = document.querySelector('.wrapper');
+      r.style.setProperty('--progress', val);
+    }
+  </script>
+  
+</body>
+</html>
